@@ -22,7 +22,7 @@ auth.py code structure:
   6.function 2 - render the registration.html and push for POST methods towards user registration data into supabase
   7.function 3 - render to login page after user completing registration and face no error
   8.function 4 - render to user dashboard upon completing the necessary steps above
-  9.function 5 - render 
+  9.function 5 - render to page.html
 
 
 
