@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <!--style is applied in the head section becasue want the styles apply to the whole page as soon as it loads-->
+    <style> 
+        body {
+            background: linear-gradient(135deg, #89f7f3 0%, #66a6ff 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(8px); 
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 32px 40px;
+            max-width: 350px;
+            width: 100%;
+        }
+        h2 {
+            color: #222;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 16px 0;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.5);
+            font-size: 1em;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background: #66a6ff;
+            color: #fff;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #89f7fe;
+            color: #222;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 16px;
+            color: #222;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+        a:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="glass">
+        <h2>Register</h2>
+        <!--forms sends data using POST to /register-->
+        <form method="POST">
+            name <input type="text" name="name" required><br>
+            email <input type="email" name="email" required><br>
+            password <input type="password" name="password" required><br>
+            <button type="submit">Register</button>
+        </form>
+        <a href="/">Back</a>
+    </div>
+</body>
+</html>
+
