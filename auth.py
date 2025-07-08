@@ -1,3 +1,4 @@
+
 from flask import Flask, render_template, request, redirect, url_for, session
 from supabase import create_client #use create_client functions from supabase
 from dotenv import load_dotenv #call .env file
